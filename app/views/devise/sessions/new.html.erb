@@ -8,12 +8,12 @@
 
 		<div class="icon">
 			<%= f.label :email, "Email", class: "cd-label" %>
-			<%= f.email_field :email, autofocus: true, required: true, class: "user" %>
+			<%= f.email_field :email, autofocus: true, required: true, class: "email" %>
 		</div> 
 
 		<div class="icon">
 			<%= f.label :password, "Password", class: "cd-label" %>
-			<%= f.password_field :password, autofocus: "off", required: true, class: "user" %>
+			<%= f.password_field :password, autofocus: "off", required: true, class: "password" %>
 		</div>
 
 		<% if devise_mapping.rememberable? -%>
@@ -23,7 +23,7 @@
 			</div>
 		<% end -%>
 
-		<div class="actions">
+		<div class="action">
 			<%= f.submit "Log in" %>
 		</div>
 	</fieldset>
