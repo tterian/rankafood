@@ -1,4 +1,146 @@
-<div class="container">
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-</div>
+<main class="cd-main-content">
+
+	<div class="cd-tab-filter-wrapper">
+		<div class="cd-tab-filter">
+			<ul class="cd-filters">
+				<li class="placeholder"> 
+					<a data-type="all" href="#0">All</a>
+				</li> 
+				<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+				<li class="filter" data-filter=".drink"><a href="#0" data-type="drink">Drink</a></li>
+				<li class="filter" data-filter=".food"><a href="#0" data-type="food">Food</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<section class="cd-gallery">
+		<ul>
+			<li class="mix drink check1 radio2 option3">
+				<img src="assets/food/beer.png" alt="Image 1">
+				<span>beer</span>
+			</li>
+			<li class="mix drink check2 radio2 option2">
+				<img src="assets/food/coffee.png" alt="Image 2">
+				<span>coffee</span>
+			</li>
+			<li class="mix drink check3 radio3 option1">
+				<img src="assets/food/cola.png" alt="Image 3">
+				<span>cola</span>
+			</li>
+			<li class="mix food check3 radio2 option4">
+				<img src="assets/food/hamburger.png" alt="Image 4">
+				<span>hamburger</span>
+			</li>
+			<li class="mix snack check1 radio3 option2">
+				<img src="assets/food/ice-cream.png" alt="Image 5">
+				<span>ice cream</span>
+			</li>
+			<li class="mix food check2 radio3 option3">
+				<img src="assets/food/pizza.png" alt="Image 6">
+				<span>pizza</span>
+			</li>
+			<li class="mix drink check2 radio2 option1">
+				<img src="assets/food/red-wine.png" alt="Image 7">
+				<span>red wine</span>
+			</li>
+			<li class="mix food check1 radio3 option4">
+				<img src="assets/food/sandwich.png" alt="Image 8">
+				<span>sandwich</span>
+			</li>
+			<li class="mix food check1 radio2 option3">
+				<img src="assets/food/spaghetti.png" alt="Image 9">
+				<span>spaghetti</span>
+			</li>
+			<li class="mix food check3 radio2 option4">
+				<img src="assets/food/sushi.png" alt="Image 10">
+				<span>sushi</span>
+			</li>
+			<li class="mix drink check3 radio3 option2">
+				<img src="assets/food/water.png" alt="Image 11">
+				<span>water</span>
+			</li>
+			<li class="mix drink check1 radio3 option1">
+				<img src="assets/food/white-wine.png" alt="Image 12">
+				<span>white wine</span>		
+			</li>
+			<li class="gap"></li>
+			<li class="gap"></li>
+			<li class="gap"></li>
+		</ul>
+		<div class="cd-fail-message">No results found</div>
+	</section>
+
+	<div class="cd-filter">
+		<form>
+			<div class="cd-filter-block">
+				<h4>Search</h4>
+					
+				<div class="cd-filter-content">
+					<input type="search" placeholder="Try color-1...">
+				</div>
+			</div>
+
+			<div class="cd-filter-block">
+				<h4>Check boxes</h4>
+
+				<ul class="cd-filter-content cd-filters list">
+					<li>
+						<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+		    			<label class="checkbox-label" for="checkbox1">Option 1</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+						<label class="checkbox-label" for="checkbox2">Option 2</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+						<label class="checkbox-label" for="checkbox3">Option 3</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cd-filter-block">
+				<h4>Select</h4>
+					
+				<div class="cd-filter-content">
+					<div class="cd-select cd-filters">
+						<select class="filter" name="selectThis" id="selectThis">
+							<option value="">Choose an option</option>
+							<option value=".option1">Option 1</option>
+							<option value=".option2">Option 2</option>
+							<option value=".option3">Option 3</option>
+							<option value=".option4">Option 4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="cd-filter-block">
+				<h4>Radio buttons</h4>
+
+				<ul class="cd-filter-content cd-filters list">
+					<li>
+						<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+						<label class="radio-label" for="radio1">All</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+						<label class="radio-label" for="radio2">Choice 2</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+						<label class="radio-label" for="radio3">Choice 3</label>
+					</li>
+				</ul>
+			</div>
+		</form>
+
+		<a href="#0" class="cd-close">Close</a>
+	</div>
+
+	<a href="#0" class="cd-filter-trigger">Filters</a>
+</main>

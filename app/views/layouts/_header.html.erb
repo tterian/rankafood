@@ -11,16 +11,17 @@
 <header class="cd-header">
 
 <nav class="cd-main-nav">
+	<% unless user_signed_in? %>
 	<ul>
 		<li>
 			<%= link_to root_path do %>
-				<p>add a food</p>
+				<p>just login to a add a food</p>
 				<%= image_tag("icons/svg/add-food.svg") %>
 			<% end %>
 		</li>
 		<li>
 			<%= link_to  new_user_session_path do %>
-				<p>register</p>
+				<p>log in</p>
 				<%= image_tag("icons/svg/exit-to-app.svg") %>
 			<% end %>			
 		</li>
@@ -31,4 +32,26 @@
 			<% end %>			
 		</li>
 	</ul>
+	<% else %>
+	<ul>
+		<li>
+			<%= link_to root_path do %>
+				<p>yay! add a food</p>
+				<%= image_tag("icons/svg/add-food.svg") %>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to  destroy_user_session_path, method: :delete do %>
+				<p>log out</p>
+				<%= image_tag("icons/svg/exit-to-app.svg") %>
+			<% end %>			
+		</li>
+		<li>
+			<%= link_to root_path do %>
+				<p>about us</p>
+				<%= image_tag("icons/svg/info.svg") %>
+			<% end %>			
+		</li>
+	</ul>
+	<% end %>
 </nav>

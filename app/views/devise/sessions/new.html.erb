@@ -6,6 +6,8 @@
 	<fieldset>
 		<legend>Account Info</legend>
 
+		<%= devise_error_messages! %>
+	
 		<div class="icon">
 			<%= f.label :email, "Email", class: "cd-label" %>
 			<%= f.email_field :email, autofocus: true, required: true, class: "email" %>
