@@ -89,7 +89,7 @@ xtab-filter
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	background: url("icons/svg/arrow.svg") no-repeat center center;
+	background: image-url("icons/svg/arrow.svg") no-repeat center center;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -426,7 +426,7 @@ xcustom form elements
 	top: 50%;
 	width: 16px;
 	height: 16px;
-	background: url("icons/svg/arrow.svg") no-repeat center center;
+	background: image-url("icons/svg/arrow.svg") no-repeat center center;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -498,7 +498,7 @@ xcustom form elements
 	display: block;
 	width: 16px;
 	height: 16px;
-	background: url("icons/svg/arrow.svg") no-repeat center center;
+	background: image-url("icons/svg/arrow.svg") no-repeat center center;
 	pointer-events: none;
 }
 .cd-filter-block select {
@@ -557,7 +557,7 @@ xcustom form elements
 	/* check mark style for check boxes */
 	width: 16px;
 	height: 16px;
-	background: url("icons/svg/check.svg") no-repeat center center;
+	background: image-url("icons/svg/check.svg") no-repeat center center;
 }
 
 .cd-filter-block input[type=checkbox]:checked + label::before {
