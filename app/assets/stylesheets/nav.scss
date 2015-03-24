@@ -14,7 +14,6 @@ $pink:		#de505e;
 	width: 100%;
 	height: 60px;
 	background-color: white;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	z-index: 2;
 }
 
@@ -55,7 +54,7 @@ $pink:		#de505e;
 	overflow: hidden;
 	top: 0;
 	right: 0;
-	width: 20%;
+	width: 50%;
 	height: 60px;
 	background: transparent;
 	z-index: 3;
@@ -82,7 +81,6 @@ $pink:		#de505e;
 	top: 0;
 	right: 0;
 	height: 60px;
-	width: 20%;
 	background: transparent;
 	z-index: 3;
 }
@@ -95,9 +93,17 @@ $pink:		#de505e;
 }
 .cd-main-nav li {
 	position: relative;
+	float: right;
 	display: inline-block;
-	margin: 16px 26% 0 0;
-	font-size: 1.7rem;
+	margin: 15px;
 }
 
+.cd-sign-in, .cd-sign-out {
+	margin-right: 100px; 
+	width: 32px;
+}
+
+.cd-about-me {
+	width: 32px;
+}
 

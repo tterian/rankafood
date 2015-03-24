@@ -11,33 +11,27 @@
 	</div>
 
 	<div class="cd-main-nav">
-		<% unless user_signed_in? %>
 		<ul>
+			<% unless user_signed_in? %>
 			<li>
-				<%= link_to  new_user_session_path do %>
-					<i class="fa fa-sign-in"></i>
+				<%= link_to  new_user_session_path, class: "hint--left", data: { hint: "log in to rate a food!" } do %>
+					<%= image_tag "icons/svg/sign-in.svg", class: "cd-sign-in" %>
 				<% end %>			
 			</li>
+			<% else %>
 			<li>
-				<%= link_to root_path do %>
-					<i class="fa fa-info"></i>
+				<%= link_to  destroy_user_session_path, method: :delete, class: "hint--left", data: { hint: "log out" } do %>
+					<%= image_tag "icons/svg/sign-out.svg", class: "cd-sign-out" %>
 				<% end %>			
 			</li>
-		</ul>
-		<% else %>
-		<ul>
+			<% end %>
+
 			<li>
-				<%= link_to  destroy_user_session_path, method: :delete do %>
-					<i class="fa fa-sign-out"></i>
+				<%= link_to about_path, class: "hint--left", data: { hint: "about me :)" } do %>
+					<%= image_tag "icons/svg/account.svg", class: "cd-about-me" %>
 				<% end %>			
 			</li>
-			<li>
-				<%= link_to root_path do %>
-					<i class="fa fa-info"></i>
-				<% end %>			
-			</li>
-		</ul>
-		<% end %>
+		</ul>		
 	</div>
 
 

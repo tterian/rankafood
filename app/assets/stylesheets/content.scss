@@ -23,6 +23,7 @@ $pink:		#de505e;
 	top: 0;
 	left: 0;
 	width: 100%;
+
 }
 .cd-main-content.is-fixed .cd-gallery {
 	padding-top: 0;
@@ -58,7 +59,6 @@ xtab-filter
 .cd-tab-filter-wrapper {
 	background-color: white;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-	z-index: 1;
 }
 .cd-tab-filter-wrapper:after {
 	content: "";
@@ -72,7 +72,7 @@ xtab-filter
 	height: 50px;
 	width: 140px;
 	margin: 0 auto;
-	z-index: 1;
+
 }
 .cd-tab-filter::after {
 	/* small arrow icon */
@@ -89,7 +89,7 @@ xtab-filter
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+	background: url("icons/svg/arrow.svg") no-repeat center center;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -426,7 +426,7 @@ xcustom form elements
 	top: 50%;
 	width: 16px;
 	height: 16px;
-	background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+	background: url("icons/svg/arrow.svg") no-repeat center center;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -498,7 +498,7 @@ xcustom form elements
 	display: block;
 	width: 16px;
 	height: 16px;
-	background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+	background: url("icons/svg/arrow.svg") no-repeat center center;
 	pointer-events: none;
 }
 .cd-filter-block select {
@@ -557,7 +557,7 @@ xcustom form elements
 	/* check mark style for check boxes */
 	width: 16px;
 	height: 16px;
-	background: url("../img/cd-icon-check.svg") no-repeat center center;
+	background: url("icons/svg/check.svg") no-repeat center center;
 }
 
 .cd-filter-block input[type=checkbox]:checked + label::before {
