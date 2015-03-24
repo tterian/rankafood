@@ -14,53 +14,81 @@
 
 	<section class="cd-gallery">
 		<ul>
-			<li class="mix drink check1 radio2 option3 beer">
-				<img src="assets/food/beer.png" alt="Image 1">
+			<li class="mix drink alcohol beer" data-order="2">
+				<img src="assets/food/beer.png" alt="beer">
 				<span>beer</span>
 			</li>
-			<li class="mix drink check2 radio2 option2 coffee">
-				<img src="assets/food/coffee.png" alt="Image 2">
-				<span>coffee</span>
+			<li class="mix morning food tasty biscuit" data-order="3">
+				<img src="assets/food/biscuit.png" alt="biscuit">
+				<span>biscuit</span>
 			</li>
-			<li class="mix drink check3 radio3 option1 cola">
-				<img src="assets/food/cola.png" alt="Image 3">
-				<span>cola</span>
+			<li class="mix birthday food tasty cake" data-order="1">
+				<img src="assets/food/cake.png" alt="cake">
+				<span>cake</span>
 			</li>
-			<li class="mix food check3 radio2 option4 hamburger">
-				<img src="assets/food/hamburger.png" alt="Image 4">
+			<li class="mix drink alcohol cocktail" data-order="4">
+				<img src="assets/food/cocktail.png" alt="cocktail">
+				<span>cocktail</span>
+			</li>
+			<li class="mix drink coffee cappuccino" data-order="5">
+				<img src="assets/food/coffee1.png" alt="cappuccino">
+				<span>cappuccino</span>
+			</li>
+			<li class="mix drink coffee espresso" data-order="6">
+				<img src="assets/food/coffee2.png" alt="espresso">
+				<span>espresso</span>
+			</li>
+			<li class="mix drink coffee americano" data-order="7">
+				<img src="assets/food/coffee3.png" alt="americano">
+				<span>americano</span>
+			</li>
+			<li class="mix drink coffee macchiato" data-order="8">
+				<img src="assets/food/coffee4.png" alt="macchiato">
+				<span>macchiato</span>
+			</li>
+			<li class="mix food tasty muffin" data-order="9">
+				<img src="assets/food/cookies.png" alt="muffin">
+				<span>muffin</span>
+			</li>
+			<li class="mix food tasty doughnut" data-order="10">
+				<img src="assets/food/doghnut.png" alt="doughnut">
+				<span>doughnut</span>
+			</li>
+			<li class="mix fast food option4 hamburger" data-order="11">
+				<img src="assets/food/hamburger.png" alt="hamburger">
 				<span>hamburger</span>
 			</li>
-			<li class="mix snack check1 radio3 option2 ice cream">
-				<img src="assets/food/ice-cream.png" alt="Image 5">
+			<li class="mix fast food option4 hotdog" data-order="12">
+				<img src="assets/food/hotdog.png" alt="hotdog">
+				<span>hotdog</span>
+			</li>
+			<li class="mix tasty option2 ice cream" data-order="13">
+				<img src="assets/food/ice-cream.png" alt="ice-cream">
 				<span>ice cream</span>
 			</li>
-			<li class="mix food check2 radio3 option3 pizza">
-				<img src="assets/food/pizza.png" alt="Image 6">
-				<span>pizza</span>
+			<li class="mix food sushi option3 california roll" data-order="14">
+				<img src="assets/food/sushi1.png" alt="sushi1">
+				<span>California roll</span>
 			</li>
-			<li class="mix drink check2 radio2 option1 red wine">
-				<img src="assets/food/red-wine.png" alt="Image 7">
+			<li class="mix food sushi option1 texas roll" data-order="15">
+				<img src="assets/food/sushi2.png" alt="sushi2">
+				<span>Texas roll</span>
+			</li>
+			<li class="mix food sushi option4 boston roll" data-order="16">
+				<img src="assets/food/sushi3.png" alt="sushi3">
+				<span>Boston roll</span>
+			</li>
+			<li class="mix morning drink option3 tea" data-order="17">
+				<img src="assets/food/tea.png" alt="tea">
+				<span>tea</span>
+			</li>
+			<li class="mix drink alcohol birthday option4 white wine" data-order="18">
+				<img src="assets/food/wine.png" alt="white-wine">
+				<span>white wine</span>
+			</li>
+			<li class="mix drink alcohol birthday option2 red wine" data-order="19">
+				<img src="assets/food/wine-glass.png" alt="red-wine">
 				<span>red wine</span>
-			</li>
-			<li class="mix food check1 radio3 option4 sandwich">
-				<img src="assets/food/sandwich.png" alt="Image 8">
-				<span>sandwich</span>
-			</li>
-			<li class="mix food check1 radio2 option3 spaghetti">
-				<img src="assets/food/spaghetti.png" alt="Image 9">
-				<span>spaghetti</span>
-			</li>
-			<li class="mix food check3 radio2 option4 sushi">
-				<img src="assets/food/sushi.png" alt="Image 10">
-				<span>sushi</span>
-			</li>
-			<li class="mix drink check3 radio3 option2 water">
-				<img src="assets/food/water.png" alt="Image 11">
-				<span>water</span>
-			</li>
-			<li class="mix drink check1 radio3 option1 white wine">
-				<img src="assets/food/white-wine.png" alt="Image 12">
-				<span>white wine</span>		
 			</li>
 			<li class="gap"></li>
 			<li class="gap"></li>
@@ -84,36 +112,41 @@
 
 				<ul class="cd-filter-content cd-filters list">
 					<li>
-						<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-		    			<label class="checkbox-label" for="checkbox1">Option 1</label>
+						<input class="filter" data-filter=".coffee" type="checkbox" id="checkbox1">
+		    			<label class="checkbox-label" for="checkbox1">Coffee lovers</label>
 					</li>
 
 					<li>
-						<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-						<label class="checkbox-label" for="checkbox2">Option 2</label>
+						<input class="filter" data-filter=".alcohol" type="checkbox" id="checkbox2">
+						<label class="checkbox-label" for="checkbox2">Alcohol stuff</label>
 					</li>
 
 					<li>
-						<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-						<label class="checkbox-label" for="checkbox3">Option 3</label>
+						<input class="filter" data-filter=".tasty" type="checkbox" id="checkbox3">
+						<label class="checkbox-label" for="checkbox3">So sweat</label>
 					</li>
+
+					<li>
+						<input class="filter" data-filter=".sushi" type="checkbox" id="checkbox4">
+						<label class="checkbox-label" for="checkbox4">Sushi fans</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".fast" type="checkbox" id="checkbox5">
+						<label class="checkbox-label" for="checkbox5">Fast food</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".morning" type="checkbox" id="checkbox6">
+						<label class="checkbox-label" for="checkbox6">Morning pair</label>
+					</li>
+
+					<li>
+						<input class="filter" data-filter=".birthday" type="checkbox" id="checkbox7">
+						<label class="checkbox-label" for="checkbox7">Happy birthday</label>
+					</li>
+
 				</ul>
-			</div>
-
-			<div class="cd-filter-block">
-				<h4>Select</h4>
-					
-				<div class="cd-filter-content">
-					<div class="cd-select cd-filters">
-						<select class="filter" name="selectThis" id="selectThis">
-							<option value="">Choose an option</option>
-							<option value=".option1">Option 1</option>
-							<option value=".option2">Option 2</option>
-							<option value=".option3">Option 3</option>
-							<option value=".option4">Option 4</option>
-						</select>
-					</div>
-				</div>
 			</div>
 		</form>
 
