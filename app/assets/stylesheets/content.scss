@@ -235,16 +235,15 @@ xgallery
 	font-weight: 400;
 	color: $grey;
 }
-
 .cd-rate-wrapper {
-	margin-top: 10px;	
+	margin-top: 30px;	
 	border: none;
 	width: 100%;
 	box-shadow: none;
 }
-
-.cd-rate-wrapper p {
-	padding: 0.3em 2.3em 0.3em;
+.cd-rate-wrapper span {
+	padding: 20% 15% 20%;
+	text-align: center;
 	font-size: 1.5rem;
 	font-weight: 300;
 	color: white;
@@ -252,20 +251,6 @@ xgallery
 	background-size: 40px 40px;
 }
 
-
-.cd-minus img {
-	float: left;
-	margin: 5px 0 0 20px;
-	width: 30px;
-	height: auto;
-}
-
-.cd-plus img {
-	float: right;
-	margin: -35px 20px 0 0;
-	width: 30px;
-	height: auto;
-}
 
 
 @media only screen and (min-width: 768px) {
@@ -287,20 +272,10 @@ xgallery
 	.cd-rate-wrapper {
 		margin-bottom: 20px;	
 	}
-	.cd-rate-wrapper p {
-		padding: 0.6em 2.1em 0.6em;
+	.cd-rate-wrapper span {
 		font-size: 2rem;
 		background-size: 80px 80px;
 	}
-	.cd-minus img {
-		margin: 20px 0 0 20px;
-		width: 50px;
-	}
-	.cd-plus img {
-		margin: -54px 20px 0 0;
-		width: 50px;
-	}
-
 }
 @media only screen and (min-width: 1170px) {
 	.cd-gallery {
@@ -313,20 +288,10 @@ xgallery
 	.cd-gallery li {
 		width: 23%;
 	}
-	.cd-rate-wrapper p {
-		padding: 0.5em 1em 0.5em;
+	.cd-rate-wrapper span {
 		font-size: 3.5rem;
 		background-size: 100px 100px;
 	}
-	.cd-minus img {
-		margin: 40px 0 0 20px;
-		width: 40px;
-	}
-	.cd-plus img {
-		margin: -76px 30px 0 0;
-		width: 40px;
-	}
-
 	.cd-gallery.filter-is-visible {
 		/* reduce width when filter is visible */
 		width: 80%;

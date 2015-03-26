@@ -61,6 +61,221 @@ jQuery(document).ready(function($){
 		( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('is-fixed') : $('.cd-main-content').removeClass('is-fixed');
 	}
 
+
+	/************************************
+		Rate changer (dumb way)
+	*************************************/
+	$('#cd-beer-minus').click( function() {
+		var value = parseInt($('#cd-beer-rate').text(), 10) - 1;
+		$('#cd-beer-rate').text(value);    
+	});
+
+	$('#cd-beer-plus').click( function() {
+		var value = parseInt($('#cd-beer-rate').text(), 10) + 1;
+		$('#cd-beer-rate').text(value);    
+	});
+
+
+	$('#cd-biscuit-minus').click( function() {
+		var value = parseInt($('#cd-biscuit-rate').text(), 10) - 1;
+		$('#cd-biscuit-rate').text(value);    
+	});
+
+	$('#cd-biscuit-plus').click( function() {
+		var value = parseInt($('#cd-biscuit-rate').text(), 10) + 1;
+		$('#cd-biscuit-rate').text(value);    
+	});
+
+
+	$('#cd-cake-minus').click( function() {
+		var value = parseInt($('#cd-cake-rate').text(), 10) - 1;
+		$('#cd-cake-rate').text(value);    
+	});
+
+	$('#cd-cake-plus').click( function() {
+		var value = parseInt($('#cd-cake-rate').text(), 10) + 1;
+		$('#cd-cake-rate').text(value);    
+	});
+
+
+	$('#cd-cocktail-minus').click( function() {
+		var value = parseInt($('#cd-cocktail-rate').text(), 10) - 1;
+		$('#cd-cocktail-rate').text(value);    
+	});
+
+	$('#cd-cocktail-plus').click( function() {
+		var value = parseInt($('#cd-cocktail-rate').text(), 10) + 1;
+		$('#cd-cocktail-rate').text(value);    
+	});
+
+
+	$('#cd-cappuccino-minus').click( function() {
+		var value = parseInt($('#cd-cappuccino-rate').text(), 10) - 1;
+		$('#cd-cappuccino-rate').text(value);    
+	});
+
+	$('#cd-cappuccino-plus').click( function() {
+		var value = parseInt($('#cd-cappuccino-rate').text(), 10) + 1;
+		$('#cd-cappuccino-rate').text(value);    
+	});
+
+
+	$('#cd-espresso-minus').click( function() {
+		var value = parseInt($('#cd-espresso-rate').text(), 10) - 1;
+		$('#cd-espresso-rate').text(value);    
+	});
+
+	$('#cd-espresso-plus').click( function() {
+		var value = parseInt($('#cd-espresso-rate').text(), 10) + 1;
+		$('#cd-espresso-rate').text(value);    
+	});	
+
+
+	$('#cd-americano-minus').click( function() {
+		var value = parseInt($('#cd-americano-rate').text(), 10) - 1;
+		$('#cd-americano-rate').text(value);    
+	});
+
+	$('#cd-americano-plus').click( function() {
+		var value = parseInt($('#cd-americano-rate').text(), 10) + 1;
+		$('#cd-americano-rate').text(value);    
+	});
+
+
+	$('#cd-macchiato-minus').click( function() {
+		var value = parseInt($('#cd-macchiato-rate').text(), 10) - 1;
+		$('#cd-macchiato-rate').text(value);    
+	});
+
+	$('#cd-macchiato-plus').click( function() {
+		var value = parseInt($('#cd-macchiato-rate').text(), 10) + 1;
+		$('#cd-macchiato-rate').text(value);    
+	});
+
+
+	$('#cd-cookies-minus').click( function() {
+		var value = parseInt($('#cd-cookies-rate').text(), 10) - 1;
+		$('#cd-cookies-rate').text(value);    
+	});
+
+	$('#cd-cookies-plus').click( function() {
+		var value = parseInt($('#cd-cookies-rate').text(), 10) + 1;
+		$('#cd-cookies-rate').text(value);    
+	});
+
+
+	$('#cd-doughnut-minus').click( function() {
+		var value = parseInt($('#cd-doughnut-rate').text(), 10) - 1;
+		$('#cd-doughnut-rate').text(value);    
+	});
+
+	$('#cd-doughnut-plus').click( function() {
+		var value = parseInt($('#cd-doughnut-rate').text(), 10) + 1;
+		$('#cd-doughnut-rate').text(value);    
+	});
+
+
+	$('#cd-hamburger-minus').click( function() {
+		var value = parseInt($('#cd-hamburger-rate').text(), 10) - 1;
+		$('#cd-hamburger-rate').text(value);    
+	});
+
+	$('#cd-hamburger-plus').click( function() {
+		var value = parseInt($('#cd-hamburger-rate').text(), 10) + 1;
+		$('#cd-hamburger-rate').text(value);    
+	});
+
+
+	$('#cd-hotdog-minus').click( function() {
+		var value = parseInt($('#cd-hotdog-rate').text(), 10) - 1;
+		$('#cd-hotdog-rate').text(value);    
+	});
+
+	$('#cd-hotdog-plus').click( function() {
+		var value = parseInt($('#cd-hotdog-rate').text(), 10) + 1;
+		$('#cd-hotdog-rate').text(value);    
+	});
+
+
+	$('#cd-cream-minus').click( function() {
+		var value = parseInt($('#cd-cream-rate').text(), 10) - 1;
+		$('#cd-cream-rate').text(value);    
+	});
+
+	$('#cd-cream-plus').click( function() {
+		var value = parseInt($('#cd-cream-rate').text(), 10) + 1;
+		$('#cd-cream-rate').text(value);    
+	});
+
+
+	$('#cd-california-minus').click( function() {
+		var value = parseInt($('#cd-california-rate').text(), 10) - 1;
+		$('#cd-california-rate').text(value);    
+	});
+
+	$('#cd-california-plus').click( function() {
+		var value = parseInt($('#cd-california-rate').text(), 10) + 1;
+		$('#cd-california-rate').text(value);    
+	});
+
+
+	$('#cd-texas-minus').click( function() {
+		var value = parseInt($('#cd-texas-rate').text(), 10) - 1;
+		$('#cd-texas-rate').text(value);    
+	});
+
+	$('#cd-texas-plus').click( function() {
+		var value = parseInt($('#cd-texas-rate').text(), 10) + 1;
+		$('#cd-texas-rate').text(value);    
+	});
+
+
+	$('#cd-boston-minus').click( function() {
+		var value = parseInt($('#cd-boston-rate').text(), 10) - 1;
+		$('#cd-boston-rate').text(value);    
+	});
+
+	$('#cd-boston-plus').click( function() {
+		var value = parseInt($('#cd-boston-rate').text(), 10) + 1;
+		$('#cd-boston-rate').text(value);    
+	});
+
+
+	$('#cd-tea-minus').click( function() {
+		var value = parseInt($('#cd-tea-rate').text(), 10) - 1;
+		$('#cd-tea-rate').text(value);    
+	});
+
+	$('#cd-tea-plus').click( function() {
+		var value = parseInt($('#cd-tea-rate').text(), 10) + 1;
+		$('#cd-tea-rate').text(value);    
+	});
+
+
+	$('#cd-wine-minus').click( function() {
+		var value = parseInt($('#cd-wine-rate').text(), 10) - 1;
+		$('#cd-wine-rate').text(value);    
+	});
+
+	$('#cd-wine-plus').click( function() {
+		var value = parseInt($('#cd-wine-rate').text(), 10) + 1;
+		$('#cd-wine-rate').text(value);    
+	});
+
+
+	$('#cd-wine-glass-minus').click( function() {
+		var value = parseInt($('#cd-wine-glass-rate').text(), 10) - 1;
+		$('#cd-wine-glass-rate').text(value);    
+	});
+
+	$('#cd-wine-glass-plus').click( function() {
+		var value = parseInt($('#cd-wine-glass-rate').text(), 10) + 1;
+		$('#cd-wine-glass-rate').text(value);    
+	});
+	
+
+
+
 	/************************************
 		MitItUp filter settings
 		More details: 
@@ -71,17 +286,17 @@ jQuery(document).ready(function($){
 
 	buttonFilter.init();
 	$('.cd-gallery ul').mixItUp({
-	    controls: {
-	    	enable: false
-	    },
-	    callbacks: {
-	    	onMixStart: function(){
-	    		$('.cd-fail-message').fadeOut(200);
-	    	},
-	      	onMixFail: function(){
-	      		$('.cd-fail-message').fadeIn(200);
-	    	}
-	    }
+		controls: {
+			enable: false
+		},
+		callbacks: {
+			onMixStart: function(){
+				$('.cd-fail-message').fadeOut(200);
+			},
+			onMixFail: function(){
+				$('.cd-fail-message').fadeIn(200);
+			}
+		}
 	});
 
 	//search filtering
@@ -93,33 +308,33 @@ jQuery(document).ready(function($){
 		var timer = 0;
 		return function(callback, ms){
 			clearTimeout (timer);
-		    timer = setTimeout(callback, ms);
+			timer = setTimeout(callback, ms);
 		};
 	})();
 
 	$(".cd-filter-content input[type='search']").keyup(function(){
-	  	// Delay function invoked to make sure user stopped typing
-	  	delay(function(){
-	    	inputText = $(".cd-filter-content input[type='search']").val().toLowerCase();
-	   		// Check to see if input field is empty
-	    	if ((inputText.length) > 0) {            
-	      		$('.mix').each(function() {
-		        	var $this = $(this);
-		        
-		        	// add item to be filtered out if input text matches items inside the title   
-		        	if($this.attr('class').toLowerCase().match(inputText)) {
-		          		$matching = $matching.add(this);
-		        	} else {
-		          		// removes any previously matched item
-		          		$matching = $matching.not(this);
-		        	}
-	      		});
-	      		$('.cd-gallery ul').mixItUp('filter', $matching);
-	    	} else {
-	      		// resets the filter to show all item if input is empty
-	      		$('.cd-gallery ul').mixItUp('filter', 'all');
-	    	}
-	  	}, 200 );
+		// Delay function invoked to make sure user stopped typing
+		delay(function(){
+			inputText = $(".cd-filter-content input[type='search']").val().toLowerCase();
+			// Check to see if input field is empty
+			if ((inputText.length) > 0) {            
+				$('.mix').each(function() {
+					var $this = $(this);
+				
+					// add item to be filtered out if input text matches items inside the title   
+					if($this.attr('class').toLowerCase().match(inputText)) {
+						$matching = $matching.add(this);
+					} else {
+						// removes any previously matched item
+						$matching = $matching.not(this);
+					}
+				});
+				$('.cd-gallery ul').mixItUp('filter', $matching);
+			} else {
+				// resets the filter to show all item if input is empty
+				$('.cd-gallery ul').mixItUp('filter', 'all');
+			}
+		}, 200 );
 	});
 });
 
@@ -128,81 +343,81 @@ jQuery(document).ready(function($){
 	to contain all filter custom functionality
 *****************************************************/
 var buttonFilter = {
-  	// Declare any variables we will need as properties of the object
-  	$filters: null,
-  	groups: [],
-  	outputArray: [],
-  	outputString: '',
+	// Declare any variables we will need as properties of the object
+	$filters: null,
+	groups: [],
+	outputArray: [],
+	outputString: '',
   
-  	// The "init" method will run on document ready and cache any jQuery objects we will need.
-  	init: function(){
-    	var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
-    
-    	self.$filters = $('.cd-main-content');
-    	self.$container = $('.cd-gallery ul');
-    
-	    self.$filters.find('.cd-filters').each(function(){
-	      	var $this = $(this);
-	      
-		    self.groups.push({
-		        $inputs: $this.find('.filter'),
-		        active: '',
-		        tracker: false
-		    });
-	    });
-	    
-	    self.bindHandlers();
-  	},
-  
-  	// The "bindHandlers" method will listen for whenever a button is clicked. 
-  	bindHandlers: function(){
-    	var self = this;
-
-    	self.$filters.on('click', 'a', function(e){
-	      	self.parseFilters();
-    	});
-	    self.$filters.on('change', function(){
-	      self.parseFilters();           
-	    });
-  	},
-  
-  	parseFilters: function(){
-	    var self = this;
-	 
-	    // loop through each filter group and grap the active filter from each one.
-	    for(var i = 0, group; group = self.groups[i]; i++){
-	    	group.active = [];
-	    	group.$inputs.each(function(){
-	    		var $this = $(this);
-	    		if($this.is('input[type="radio"]') || $this.is('input[type="checkbox"]')) {
-	    			if($this.is(':checked') ) {
-	    				group.active.push($this.attr('data-filter'));
-	    			}
-	    		} else if($this.is('select')){
-	    			group.active.push($this.val());
-	    		} else if( $this.find('.selected').length > 0 ) {
-	    			group.active.push($this.attr('data-filter'));
-	    		}
-	    	});
-	    }
-	    self.concatenate();
-  	},
-  
-  	concatenate: function(){
-    	var self = this;
-    
-    	self.outputString = ''; // Reset output string
-    
-	    for(var i = 0, group; group = self.groups[i]; i++){
-	      	self.outputString += group.active;
-	    }
-    
-	    // If the output string is empty, show all rather than none:    
-	    !self.outputString.length && (self.outputString = 'all'); 
+	// The "init" method will run on document ready and cache any jQuery objects we will need.
+	init: function(){
+		var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
 	
-    	// Send the output string to MixItUp via the 'filter' method:    
-		if(self.$container.mixItUp('isLoaded')){
-	    	self.$container.mixItUp('filter', self.outputString);
+		self.$filters = $('.cd-main-content');
+		self.$container = $('.cd-gallery ul');
+	
+		self.$filters.find('.cd-filters').each(function(){
+			var $this = $(this);
+		  
+			self.groups.push({
+				$inputs: $this.find('.filter'),
+				active: '',
+				tracker: false
+			});
+		});
+		
+		self.bindHandlers();
+	},
+  
+	// The "bindHandlers" method will listen for whenever a button is clicked. 
+	bindHandlers: function(){
+		var self = this;
+
+		self.$filters.on('click', 'a', function(e){
+			self.parseFilters();
+		});
+		self.$filters.on('change', function(){
+		  self.parseFilters();           
+		});
+	},
+  
+	parseFilters: function(){
+		var self = this;
+	 
+		// loop through each filter group and grap the active filter from each one.
+		for(var i = 0, group; group = self.groups[i]; i++){
+			group.active = [];
+			group.$inputs.each(function(){
+				var $this = $(this);
+				if($this.is('input[type="radio"]') || $this.is('input[type="checkbox"]')) {
+					if($this.is(':checked') ) {
+						group.active.push($this.attr('data-filter'));
+					}
+				} else if($this.is('select')){
+					group.active.push($this.val());
+				} else if( $this.find('.selected').length > 0 ) {
+					group.active.push($this.attr('data-filter'));
+				}
+			});
 		}
-  	}
+		self.concatenate();
+	},
+  
+	concatenate: function(){
+		var self = this;
+	
+		self.outputString = ''; // Reset output string
+	
+		for(var i = 0, group; group = self.groups[i]; i++){
+			self.outputString += group.active;
+		}
+	
+		// If the output string is empty, show all rather than none:    
+		!self.outputString.length && (self.outputString = 'all'); 
+	
+		// Send the output string to MixItUp via the 'filter' method:    
+		if(self.$container.mixItUp('isLoaded')){
+			self.$container.mixItUp('filter', self.outputString);
+		}
+	}
 };
