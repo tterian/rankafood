@@ -211,7 +211,6 @@ xgallery
 	background-color: white;
 	text-align: center;
 	margin-bottom: 2em;
-	padding-bottom: 2em;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 	display: none;
 }
@@ -223,23 +222,61 @@ xgallery
 }
 .cd-gallery img {
 	display: block;
+	margin: 2% 13% 1%;
 	width: 75%;
-	margin: 5% 13% 2%;
 }
 .cd-gallery .cd-fail-message {
 	display: none;
 	text-align: center;
 }
-.cd-gallery span {
+.cd-gallery p {
 	text-transform: uppercase;
 	font-size: 1.3rem;
 	font-weight: 400;
 	color: $grey;
 }
 
+.cd-rate-wrapper {
+	border: 1px solid blue;
+	margin-top: 10px;
+
+}
+
+.cd-rate-wrapper {
+	color: $grey;
+	border: none;
+	width: 100%;
+	box-shadow: none;
+}
+
+.cd-rate-wrapper p {
+	padding: 0.3em 0 0.3em;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: white;
+	background: image-url("icons/svg/round.svg") no-repeat center center;
+	background-size: 40px 40px;
+}
+
+
+.cd-minus img {
+	float: left;
+	margin: 40px 0 0 20px;
+	width: 40px;
+	height: auto;
+}
+
+.cd-plus img {
+	float: right;
+	margin: -76px 30px 0 0;
+	width: 40px;
+	height: auto;
+}
+
+
 @media only screen and (min-width: 768px) {
 	.cd-gallery {
-		padding: 40px 5%;
+		padding: 40px 3%;
 	}
 	.cd-gallery ul {
 		text-align: justify;
@@ -253,10 +290,16 @@ xgallery
 		width: 48%;
 		margin-bottom: 2em;
 	}
+	.cd-rate-wrapper p {
+		padding: 0.5em 0 0.5em;
+		font-size: 2rem;
+		background-size: 80px 80px;
+	}
+
 }
 @media only screen and (min-width: 1170px) {
 	.cd-gallery {
-		padding: 50px 5%;
+		padding: 50px 2%;
 		float: right;
 		-webkit-transition: width 0.3s;
 		-moz-transition: width 0.3s;
@@ -265,9 +308,15 @@ xgallery
 	.cd-gallery li {
 		width: 23%;
 	}
+	.cd-rate-wrapper p {
+		padding: 0.5em 1em 0.5em;
+		font-size: 3.5rem;
+		background-size: 100px 100px;
+	}
+
 	.cd-gallery.filter-is-visible {
 		/* reduce width when filter is visible */
-		width: 76%;
+		width: 80%;
 	}
 }
 
@@ -347,7 +396,7 @@ xfilter
 }
 @media only screen and (min-width: 1170px) {
 	.cd-filter {
-		width: 24%;
+		width: 20%;
 	}
 	.cd-filter form {
 		padding: 70px 10%;
@@ -366,7 +415,8 @@ xfilter
 	text-indent: 100%;
 	color: transparent;
 	white-space: nowrap;
-	z-index: 1;
+	background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;
+	z-index: 3;
 }
 
 .cd-filter-trigger.filter-is-visible {
@@ -375,12 +425,13 @@ xfilter
 @media only screen and (min-width: 1170px) {
 	.cd-filter-trigger {
 		width: auto;
-		left: 5%;
+		left: 2%;
 		text-indent: 0;
 		color: $grey;
 		text-transform: uppercase;
 		font-size: 1.3rem;
 		font-weight: 400;
+		padding-left: 24px;
 		background-position: left center;
 		-webkit-transition: color 0.3s;
 		-moz-transition: color 0.3s;
