@@ -237,20 +237,14 @@ xgallery
 }
 
 .cd-rate-wrapper {
-	border: 1px solid blue;
-	margin-top: 10px;
-
-}
-
-.cd-rate-wrapper {
-	color: $grey;
+	margin-top: 10px;	
 	border: none;
 	width: 100%;
 	box-shadow: none;
 }
 
 .cd-rate-wrapper p {
-	padding: 0.3em 0 0.3em;
+	padding: 0.3em 2.3em 0.3em;
 	font-size: 1.5rem;
 	font-weight: 300;
 	color: white;
@@ -261,15 +255,15 @@ xgallery
 
 .cd-minus img {
 	float: left;
-	margin: 40px 0 0 20px;
-	width: 40px;
+	margin: 5px 0 0 20px;
+	width: 30px;
 	height: auto;
 }
 
 .cd-plus img {
 	float: right;
-	margin: -76px 30px 0 0;
-	width: 40px;
+	margin: -35px 20px 0 0;
+	width: 30px;
 	height: auto;
 }
 
@@ -290,10 +284,21 @@ xgallery
 		width: 48%;
 		margin-bottom: 2em;
 	}
+	.cd-rate-wrapper {
+		margin-bottom: 20px;	
+	}
 	.cd-rate-wrapper p {
-		padding: 0.5em 0 0.5em;
+		padding: 0.6em 2.1em 0.6em;
 		font-size: 2rem;
 		background-size: 80px 80px;
+	}
+	.cd-minus img {
+		margin: 20px 0 0 20px;
+		width: 50px;
+	}
+	.cd-plus img {
+		margin: -54px 20px 0 0;
+		width: 50px;
 	}
 
 }
@@ -312,6 +317,14 @@ xgallery
 		padding: 0.5em 1em 0.5em;
 		font-size: 3.5rem;
 		background-size: 100px 100px;
+	}
+	.cd-minus img {
+		margin: 40px 0 0 20px;
+		width: 40px;
+	}
+	.cd-plus img {
+		margin: -76px 30px 0 0;
+		width: 40px;
 	}
 
 	.cd-gallery.filter-is-visible {
