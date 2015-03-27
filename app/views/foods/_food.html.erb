@@ -1,0 +1,13 @@
+<li class="<%= food.tags %>" data-order="<%= food.rank %>">
+	<%= image_tag "food/#{food.name}.png" %>
+	<p><%= food.name %></p>
+	<div class="cd-rate-wrapper">
+		<button id="cd-<%= food.name %>-minus">
+			<%= image_tag "icons/svg/minus-1.svg" %>
+		</button>
+		<span id="cd-<%= food.name %>-rate"><%= food.rank %></span>
+		<button id="cd-<%= food.name %>-plus">
+			<%= image_tag "icons/svg/plus-1.svg" %>
+		</button>
+	</div>
+</li>
