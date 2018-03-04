@@ -25,19 +25,19 @@ development:
  database: db/rankme_development
  host: localhost
  username: tigranas
- password: Virl645830
+ password:
 
 test:
  <<: *default
  database: db/rankme_test
  host: localhost
  username: tigranas
- password: Virl645830
+ password:
 
 production:
  <<: *default
  database: db/rankme_production
  host: localhost
  username: tigranas
- password: Virl645830
+ password:
 
